@@ -13,9 +13,9 @@ source install/setup.bash
 
 ## 运行方法
 ### 方法一（分别运行两个终端）
-# 终端1
+#### 终端1
 ros2 run py_pubsub talker
-# 终端2
+#### 终端2
 ros2 run py_pubsub listener
 
 ### 方法二（运行launch）

@@ -3,7 +3,7 @@ from rclpy.node import Node #Node是节点的基础模板
  
 from my_interfaces.msg import MyMessage
 
-import random #导入随机数
+import random 
  
  
 class PublisherNode(Node):

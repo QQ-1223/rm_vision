@@ -6,8 +6,12 @@ ROS2 Humble
 Python 3.10
 
 ## 搭建步骤
+mkdir -p ~/ros2_ws1/src
+cd ~/ros2_ws1/src
+git clone https://github.com/QQ-1223/rm_vision.git .
 cd ~/ros2_ws1
 colcon build --packages-select my_interfaces
+source install/setup.bash
 colcon build --packages-select py_pubsub
 source install/setup.bash
 

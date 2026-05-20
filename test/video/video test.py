@@ -22,8 +22,8 @@ def creatTrackbar():  #cv2.createTracker(名称，窗口名，默认值，最大
     # cv.createTrackbar("vmax", "color_adjust", 255, 255, nothing)
 
     # red的HSV阈值
-    cv2.createTrackbar("hmin", "color_adjust", 0, 255, nothing)
-    cv2.createTrackbar("hmax", "color_adjust", 255, 255, nothing)
+    cv2.createTrackbar("hmin", "color_adjust", 0, 179, nothing)
+    cv2.createTrackbar("hmax", "color_adjust", 179, 179, nothing)
     cv2.createTrackbar("smin", "color_adjust", 3, 255, nothing)
     cv2.createTrackbar("smax", "color_adjust", 255, 255, nothing)
     cv2.createTrackbar("vmin", "color_adjust", 245, 255, nothing)
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     #photo = 'red.jpeg' # 读取图片文件路径
     #cap = cv2.imread(photo) # 创建图像对象，读取图片文件
 
-    video = 'video.mp4' #视频
+    video =  '/home/liu/RM_Vision/zhuangjiaban/test/video/video3.mp4' #视频
     cap = cv2.VideoCapture(video)
 
     #if cap is None: #如果找不到照片，打印错误信息并退出程序

@@ -16,8 +16,8 @@ def creatTrackbar():  # creat trackbar to adjust the color threshold.
     # cv.createTrackbar("vmin", "color_adjust", 255, 255, nothing)
     # cv.createTrackbar("vmax", "color_adjust", 255, 255, nothing)
     # red
-    cv2.createTrackbar("hmin", "color_adjust", 0, 255, nothing)
-    cv2.createTrackbar("hmax", "color_adjust", 255, 255, nothing)
+    cv2.createTrackbar("hmin", "color_adjust", 0, 179, nothing)
+    cv2.createTrackbar("hmax", "color_adjust", 179, 179, nothing)
     cv2.createTrackbar("smin", "color_adjust", 3, 255, nothing)
     cv2.createTrackbar("smax", "color_adjust", 255, 255, nothing)
     cv2.createTrackbar("vmin", "color_adjust", 245, 255, nothing)
@@ -69,10 +69,10 @@ def dilate_binary(binary, x, y):
     return dst
 
 if __name__ == '__main__':
-    photo = 'red.jpeg' #视频文件路径
-    cap = cv2.imread(photo) #创建视频捕获对象，打开视频文件
+    photo =  '/home/liu/RM_Vision/zhuangjiaban/test/picture/red.jpeg' #图片文件路径
+    cap = cv2.imread(photo) #创建图片捕获对象，打开图片文件
     if cap is None:
-        print("无法打开视频文件")
+        print("无法打开图片文件")
         exit()
     #创建窗口和滑动条
     cv2.namedWindow("color_adjust")

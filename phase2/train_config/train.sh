@@ -1,0 +1,1 @@
+python train.py --data bvn.yaml --epochs 30

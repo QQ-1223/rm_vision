@@ -1,0 +1,12 @@
+#数据集路径
+path: /mnt/ubuntu_data/yolov8/datasets/bvn
+
+#训练集、验证集图片路径
+train: train/images
+val: val/images
+
+#类别名称
+nc: 2
+
+#类别名称
+names: ['Red Armor', 'Blue Armor']
